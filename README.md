@@ -1,0 +1,1 @@
+Uma calculadora, feita 100% na mão

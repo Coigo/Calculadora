@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script defer src="index.js"></script>
+</head>
+<body>
+    
+    <div class="Calcbody">
+        <div id="display">              <!-- detalhe na escada -->
+            <p id="upperNumbersDisplay"></p>
+            <h1 id="DownNumbers">0</h1>
+
+        </div>
+        <div id="buttonGrid">
+            <span class="button" id="1" onclick="pushCaractereToArray(1)">1</span>
+            <span class="button" id="2" onclick="pushCaractereToArray(2)">2</span>
+            <span class="button" id="3" onclick="pushCaractereToArray(3)">3</span>
+
+            <span class="buttonOp" id="/" onclick="ChoseOperating(), SelectOperator('/')">/</span>
+            <span class="button" id="4" onclick="pushCaractereToArray(4)">4</span>
+            <span class="button" id="5" onclick="pushCaractereToArray(5)">5</span>
+            <span class="button" id="6" onclick="pushCaractereToArray(6)">6</span>
+
+            <span class="buttonOp" id="x" onclick="ChoseOperating(), SelectOperator('*')">x</span>
+            <span class="button" id="7" onclick="pushCaractereToArray(7)">7</span>
+            <span class="button" id="8" onclick="pushCaractereToArray(8)">8</span>
+            <span class="button" id="9" onclick="pushCaractereToArray(9)">9</span>
+            
+            <span class="buttonOp" id="-" onclick="ChoseOperating(), SelectOperator('-')">-</span>
+            <span class="button" id="Clear" onclick="clearAll()">Cr</span>
+            <span class="button" id="0" onclick="pushCaractereToArray(0)">0</span>
+            <span class="buttonOp" id="+" onclick="ChoseOperating(), SelectOperator('+')">+</span>
+            <span class="button" id="equal" onclick="ChoseOperating(), DisplayResult(), clearAfterConclude()">=</span>
+        </div>
+    </div>
+</body>
+</html>
